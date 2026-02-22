@@ -1,0 +1,60 @@
+Python
+----------
+>> Python is a High level, Interpretted, Object-Oriented Programming language 
+
+Human Written Code
+|
+|    (Compilation) -----> It happens in one go(Attempt)
+|
+Byte Code (0110001)
+|
+|    (Interpretation(Translate)) -----> It happens in line by line
+|
+Machine Code
+
+
+Python file ---> .py
+Terminal ---> cmd, powershell, get bash
+Command ---> python fileName.py
+
+Print
+----------
+>> TO show a data at the Output
+
+Syntax
+----------
+>> It is case sensitive.
+>> Indentation matters.(WhiteSpace ---> Define a Block)
+
+Comments in Python
+-------------------------
+Single line Comments ---> #
+Multiple line Comments ---> '''   ''' or Select the Multiple line and press Ctrl+/
+
+Veriables
+---------------
+>> Named Storage to store the piece of data.
+   *Python is Dynamically Typed language
+   *We don't declare the datatype
+   * Python automatically detects the datatype at runtime
+Ex : VarName = Value (a=10)
+
+Naming Rules
+---------------
+>> Can contains Letters, Numerics, _ , -
+>> It Cannot Start with Numeric
+>> No Reserved Keywords
+   Ex >> Wrong          |     Correct
+                        |      
+        print=10        |    a=10     or Odd_Numbers=1,3,5...
+        print(print)    |    print(a) or print(Odd_Numbers)
+
+Data types
+---------------
+Integer ---> Whole Numbers (-2,-1,0,1,2,)
+Float   ---> Decimal Numbers (1.1,2.2,3.3)
+String  ---> Sequence of Characters (str1="Sagar Chowdary")('',"")
+
+The Inbuilt function to find datatype is ---> type(obj)
+print(a+b)       ---> Addition
+print(str1+str2) ---> Concatination
