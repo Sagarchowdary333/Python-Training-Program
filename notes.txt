@@ -1,3 +1,4 @@
+--------------------------1st Day-------------------------
 Python
 ----------
 >> Python is a High level, Interpretted, Object-Oriented Programming language 
@@ -58,3 +59,167 @@ String  ---> Sequence of Characters (str1="Sagar Chowdary")('',"")
 The Inbuilt function to find datatype is ---> type(obj)
 print(a+b)       ---> Addition
 print(str1+str2) ---> Concatination
+Boolean          ---> True/False
+
+
+
+-------------------------2nd Day-------------------------
+
+Operators
+------------------------------
+>> Operators are symbols or keyword that perform operations on operands(Values).
+   EX : 3 + 2 = 5 
+   >>> 3,2 are operands
+   >>> (+) are Operator
+
+>> Types of Operators
+------------------------------
+1. Arithimatic Operators
+
+   * Addition       ---> +
+   * Subtraction    ---> -
+   * Multiplication ---> *
+   * Division       ---> /
+   * Floor Division ---> // (After doing Division it will ignore all the decimal part and keep integer part only)
+   * Modulus        ---> %  (Gives Reminder Value)
+                            Ex : 333%13 ---> 333/13=25.6 ---> 13*25=325 ---> 333-325=8
+                            Ex : 13%333 ---> 13/333=0.03 ---> 333*0=0   ---> 13-0=13
+   * Exponentiation ---> ** (which gives the result of a raised to the power of b)
+
+
+
+   BODMAS ---> /, *, + or -
+
+
+
+2. Comparision Operators (Boolean)
+
+   * ==  ---> Equal
+   * !=  ---> NOtequal
+   * <   ---> Lesser Than
+   * >   ---> Greater Than
+   * <=  ---> Lesser Or Equal
+   * >=  ---> Greater Or Equal
+
+
+
+3. Logical Operators (Bool ---> Bool)
+
+   * AND ---> and ---> True ---> when both are True otherwise it will Return False 
+     EX : a = True
+          b = False
+      
+     OUTPUT : False
+
+   * OR  ---> or ---> True ---> At least one of both should be True to get the answer True.
+     Ex : a = True
+          b = False
+     
+     OUTPUT : True
+
+   * NOT ---> not ---> Gives Opposite Values
+     Ex : a = True        
+          b = False
+          print(not a)    print(not b)   print(not not a)
+
+     OUTPUT : False       True           True
+
+   
+
+3. Assignment Operators
+   
+   * =   ---> assign
+   * +=  ---> add and assign
+   * -=  ---> sub and assign
+   * *=
+   * /=
+   * //=
+   * %=
+   * **=
+
+
+4. Bitwise Operators
+
+   >>> Uses Bite code (01)
+   >>> 0 ---> False 
+   >>> 1 ---> True
+   >>> Binary numbers are calculated by adding the required powers of 2 
+       to get the given number.We write 1 in the positions that are used 
+       and 0 in the remaining positions.
+       EX : 49
+
+            256 128 64 32 16 8 4 2 1
+                          
+
+   * and   ---> & ---> performs (and) operations between bits
+
+                  ---> ( )
+               
+     >>> (10&9)    1    0   1   0
+                   1    0   0   1
+                  ___  ___ ___ ___
+                   1    0   0   0    ---> Binary Value is 8
+
+   * Or    ---> | ---> Performs (Or) Operators between bits
+
+     >>> (10|9)    1   0   1   0
+                   1   0   0   1
+                   ______________
+                   1   0   1   1      ---> Binary Value is 11
+
+   * X-Or  ---> ^ ---> Performs (X-or) Operators between bits
+     
+     Same bits ---> 0   0      Different Bits --->  1
+                        0                           0
+                       ---                         ---
+                        0                           1
+
+     >>> (10^9)    1   0   1   0
+                   1   0   0   1
+                  ---------------
+                   0   0   1   1      ---> Binary Value is 3
+
+   * not   ---> ~ ---> Performs not operations between bits.
+
+                       ( ~n = -(n+1)) 
+
+   * right shift ---> >>  ---> Used to move the bit towards right for 
+                               particular positions
+                               (Right shift (>>) shifts the bits of the 
+                               number to the right by the specified number of positions)
+
+                          ---> ( a >> b = a / 2^b )
+
+      >>> (10>>3)  0   0   0   1  ---> 1
+                         
+          EX :     1 0 1 0(X) >> 1 --->  0 1 0 1     
+                   0 1 0 1(X) >> 1 --->  0 0 1 0
+                   0 0 1 0(X) >> 1 --->  0 0 0 1 ---> 1
+
+          (10>>1)  0   1   0   1  ---> 10
+
+          EX :     1 0 1 0(X) >> 1 --->  0 1 0 1 ---> 10
+
+   * left shift  ---> <<  ---> Used to move the bit towards left for 
+                               particular positions
+      
+                          ---> ( a << b = a x 2^b )
+
+      >>> (10<<1)  1   0   1   0  ---> 20
+
+          Ex :  1 0 1 0
+              1 0 1 0 0 ---> 20
+            (16 8 4 2 1)
+
+          (10<<3) 1 0 1 0 0 0 0  ---> 80
+              
+          Ex :   1 0 1 0
+         1  0  1 0 0 0 0 ---> 80
+       (64 32 16 8 4 2 1)          
+
+5. Membership Operators
+
+   
+
+6. Identity Operators
+
