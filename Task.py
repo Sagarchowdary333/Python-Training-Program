@@ -145,3 +145,73 @@
 
 # value = square(6)
 # print("Square value:", value)
+
+# ---------- Task 5 ----------
+
+# String Operations:
+# -----------------------
+# Concatenation
+
+# str1 = "Sagar"
+# str2 = "Chowdary"
+
+# result = str1 + " " + str2
+# print(result)
+
+# Repetition
+
+# text = "Sagar Chowdary "
+# print(text * 3)
+
+# Built-in String Methods:
+# ------------------------
+
+# name = "sagar chowdary"
+
+# .upper()
+# print(name.upper())
+
+# .lower()
+# print(name.lower())
+
+# .title()
+# print(name.title())
+
+# capitalize()
+# print(name.capitalize()) 
+
+# Whitespace Removal Methods: 
+# --------------------------
+
+# name = "   Sagar Chowdary   "
+
+# .strip()
+# print(name.strip())
+
+# .lstrip()
+# print(name.lstrip())
+
+# .rstrip()
+# print(name.rstrip())
+
+# Other String Methods:
+#------------------
+
+from os import name
+
+
+Name = "Vidya Sagar"
+
+# .replace(old, new)
+# print(Name.replace("Vidya", "Kota"))
+
+# .split(breakChar) → splits string into multiple substrings stored in a list
+# print(Name.split(" "))
+
+# .join(iterable) → joins elements of iterable into a string
+# 
+
+Name = "Sagar"
+Age = 23
+
+print(f"My name is {Name} and I am {Age} years old")

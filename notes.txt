@@ -22,6 +22,30 @@ Print
 ----------
 >> TO show a data at the Output
 
+Input
+----------
+>> input(str)
+>> input() function is used to take input from user. By default 
+   it will consider the value as string.
+
+Ex : * a=input()
+       print(a)
+
+     * a=input("Enter the marks :")
+       print(a+40) ---> Error because we can't add int and str.
+
+     * a=int(input("Enter :"))
+       print(a+40) ---> OUTPUT : Enter : 60
+                                 100
+
+     * a=input("Enter :")
+       print(a*2) ---> OUTPUT ---> Enter : 45
+                                   4545
+                       OUTPUT ---> Enter : Sagar Chowdary
+                                   Sagar Chowdary
+                                   Sagar Chowdary
+
+
 Syntax
 ----------
 >> It is case sensitive.
@@ -219,7 +243,106 @@ Operators
 
 5. Membership Operators
 
-   
+
 
 6. Identity Operators
+
+
+
+------------------------- 3rd Day -------------------------
+
+Control Flow
+------------------------------
+
+1. Conditional Clause Statement ---> (Make Python to take decition)
+
+   * if : It is used to execute a block of code when a condition is true. 
+          It is used to make decisions in our code.
+
+     >>> Syntax ---> if Condition:
+                         Block of Code
+
+         Condition ---> An expression that returns a Boolean.
+         True ---> Code will get executed
+         False ---> code Will be Ignore  
+
+         Ex : Age=16
+              if Age>17:
+              print("You Can Vote...!") ---> Code will be ignore becauseit is False.
+
+              Age=18
+              if Age>17:
+              print("You Can Vote...!")
+              
+              OUTPUT ---> You Can Vote...!
+   
+   * Elif or Elseif : Itis used when we have more than 2 conditions. 
+                      It is used to check multiple conditions.
+
+     >>> Syntax ---> elif Condition:
+                           Block of Code
+                     
+                     Ex : a=50
+
+                          if a>=100:
+                          print("Executed if Block")
+                          elif a>=50:
+                          print("Executed elif Block")
+                          else a>=25:
+                          print("Executed else Block")
+
+                          OUTPUT ---> Executed elif Block
+
+   * Nestif : It is used when we have to check multiple conditions. 
+              It is used to check a condition inside another condition.
+     
+     >>> Syntax ---> if condition 1:
+                         if condition 2:
+                             Block of Code
+
+                      Ex : a=int(input("Enter the Marks: "))
+                           if a>49:
+                               if a>89:
+                                   print("A Grade")
+                               elif a>79:
+                                   print("B Grade")
+                               elif a>69:
+                                   print("C Grade")
+                           else:
+                               if a>59:        
+                                   print("D Grade")
+                                elif a>49:
+                                   print("E Grade")
+                               else:
+                                   print("Fail")
+
+   * Else : It is used when if condition is false. 
+            It is used to execute a block of code when the if condition is false.
+
+     >>> Syntax --->    Else: (Doesn't need any Condition)
+                            Block Of Code
+
+         ---> It depends on the if block's Condition
+         ---> If the if Block's Condition is false then it will execute else block.
+   
+         Ex : Age=16
+              if Age>17:
+                  print("You Can Vote...!")
+              else:
+                  print("You cannot Vote...!")
+
+              OUTPUT ---> You Cannot Vote...!
+
+             Age=int(input("Enter your Age: "))
+             if Age>17:
+                 print("You Can Vote...!")
+             else:
+                 print("You cannot Vote...!")
+
+             OUTPUT ---> Enter Your Age: (Here we want enter the age. If the condition is true
+                         then if condition will execute(You Can Vote). If the condition is False 
+                         else condition will be execute(You Cannot Vote...!))
+
+
+2. Loop Statement ---> (Repeating Code)
 

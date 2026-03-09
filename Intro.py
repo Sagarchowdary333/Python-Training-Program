@@ -36,4 +36,19 @@
 # print(str1+str2) ---> SagarChowdary
 # print(str1*2) ---> SagarSagar
 # print(str1*2+str2) ---> SagarSagarChowdary
-# 
+
+# input() function is used to take input from user. By default it will consider the value as string.
+# ----------------------------------------------------------------------------------------------------
+
+# a=input()
+# print(a)
+# print(a+40) ---> Error because we can't add int and str
+# print(a*2) ---> 1010 because input function will consider the value as string by default. if we want to consider the value as integer then we have to use int() function.
+
+# a=int(input("Enter: "))
+# print(a+40)
+
+# Age=int(input("Enter your Age: "))
+# print("You Can Vote...!")
+# print("You cannot Vote...!")
+
