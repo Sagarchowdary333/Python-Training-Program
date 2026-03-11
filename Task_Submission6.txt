@@ -139,3 +139,4 @@
 5. Close the file after completing the operations.
 
     file.close()
+
