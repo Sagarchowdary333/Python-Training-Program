@@ -197,21 +197,90 @@
 # Other String Methods:
 #------------------
 
-from os import name
+# from os import name
 
 
-Name = "Vidya Sagar"
+# Name = "Vidya Sagar"
 
-# .replace(old, new)
-# print(Name.replace("Vidya", "Kota"))
+#  .replace(old, new)
+#  print(Name.replace("Vidya", "Kota"))
 
-# .split(breakChar) → splits string into multiple substrings stored in a list
-# print(Name.split(" "))
+#  .split(breakChar) → splits string into multiple substrings stored in a list
+#  print(Name.split(" "))
 
-# .join(iterable) → joins elements of iterable into a string
-# 
+#  .join(iterable) → joins elements of iterable into a string
+#  
 
-Name = "Sagar"
-Age = 23
+# Name = "Sagar"
+# Age = 23
 
-print(f"My name is {Name} and I am {Age} years old")
+# print(f"My name is {Name} and I am {Age} years old")
+
+
+
+# ---------- Task 6 ----------
+
+# Errors and handle exceptions in Python
+# -----------------------------------------
+
+# ZeroDivisionError & ValueError
+# ---------------------------------
+
+# EX :
+      # try:
+      #     a = int(input("Enter first number: "))
+      #     b = int(input("Enter second number: "))
+            
+      #     result = a / b
+      #     print("Result:", result)
+
+      # except ZeroDivisionError:
+      #     print("Cannot divide by zero")
+
+      # except ValueError:
+      #     print("Invalid input. Please enter numbers only")
+
+# Try & Except & Finally
+# ------------------------------------
+
+# EX :
+      # try:
+      #     num = int(input("Enter a number: "))
+      #     print("Number entered:", num)
+
+      # except ValueError:
+      #     print("Input should be a number")
+
+      # finally:
+      #     print("Executed")
+
+
+
+# File Handling in Python
+# ------------------------------------ 
+
+# file operations in Python.
+# --------------------------
+
+# create a file and write text
+    # file = open("data.txt", "w")
+    # file.write("This is my first file.\n")
+    # file.close()
+
+# Append content
+    # file = open("data.txt", "a")
+    # file.write("This is an appended line.\n")
+    # file.close()
+
+# Read Entire File
+    # file = open("data.txt", "r")
+    # content = file.read()
+    # print(content)
+    # file.close()
+
+# Read the file line by line
+    # file = open("data.txt", "r")
+    # lines = file.readlines()
+    # for line in lines:
+    #     print(line)
+    # file.close()
