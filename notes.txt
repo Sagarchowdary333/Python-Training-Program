@@ -668,4 +668,3 @@ DATA STRUCTURES [All the Data Structures are Iterable Objects]
 
              OUTPUT: []
 
-        
