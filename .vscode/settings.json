@@ -1,0 +1,23 @@
+{
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.inlayHints.pytestParameters": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.includeExtraPathSymbolsInSymbolSearch": true,
+    "python.analysis.includeAliasesFromUserFiles": true,
+    "python.analysis.generateWithTypeAnnotation": true,
+    "python.analysis.extraCommitChars": true,
+    "python.analysis.enableTroubleshootMissingImports": true,
+    "python.analysis.enableParallelIndexing": true,
+    "python.analysis.displayEnglishDiagnostics": true,
+    "python.analysis.disableTaggedHints": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.autoTranslateDocstrings": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.autoFormatStrings": true,
+    "npm.runSilent": true,
+    "npm.enableRunFromFolder": true,
+    "mediaPreview.video.loop": true,
+    "mediaPreview.video.autoPlay": true,
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "markdown.occurrencesHighlight.enabled": true
+}

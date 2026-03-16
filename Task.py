@@ -285,3 +285,180 @@
     #     print(line)
     # file.close()
 
+# ---------- Task 7 ----------
+
+# import email
+
+# import mysql.connector
+
+# db = mysql.connector.connect(
+#     host="localhost",
+#     user="root",
+#     password="3333",
+#     database="Contact_Notes_db"
+# )
+
+# cursor = db.cursor()
+
+# print("Database connected Successfully")
+
+
+# def add_contact():
+#     Name = input("Enter Name: ")
+#     Phone = input("Enter Phone: ")
+#     Email = input("Enter Email: ")
+
+#     sql = "INSERT INTO Contacts(Name,Phone,Email) VALUES(%s,%s,%s)"
+#     cursor.execute(sql,(Name,Phone,Email))
+#     db.commit()
+
+#     print("Contact Added Successfully")
+
+
+
+# def view_contacts():
+#     cursor.execute("SELECT * FROM Contacts")
+#     result = cursor.fetchall()
+
+#     for row in result:
+#         print(row)
+
+
+
+# def delete_contact():
+#     cid = input("Enter Contact ID: ")
+
+#     sql = "DELETE FROM Contacts WHERE Id=%s"
+#     val = (cid,)
+
+#     cursor.execute(sql,val)
+#     db.commit()
+
+#     print("Contact Deleted Successfully")
+
+
+
+# def update_contact():
+
+#     cid = input("Enter Contact ID to update: ")
+
+#     Name = input("Enter New Name: ")
+#     Phone = input("Enter New Phone: ")
+#     Email = input("Enter New Email: ")
+
+#     sql = "UPDATE Contacts SET Name=%s, Phone=%s, Email=%s WHERE Id=%s"
+#     cursor.execute(sql,(Name,Phone,Email,cid))
+
+#     db.commit()
+
+#     print("Contact Updated Successfully")
+
+
+
+# def search_contact():
+#     name = input("Enter Name To Search: ")
+#     sql = "SELECT * FROM Contacts WHERE Name=%s"
+#     cursor.execute(sql,(name,))
+#     Result = cursor.fetchall()
+#     for row in Result:
+#         print(row)
+
+
+
+# def add_notes():
+#     Title = input("Enter Note Title: ")
+#     Content = input("Enter Note Content: ")
+
+#     sql = "INSERT INTO Notes(Title,Content) VALUES(%s,%s)"
+#     val = (Title,Content)
+
+#     cursor.execute(sql,val)
+#     db.commit()
+
+#     print("Note added successfully")
+
+
+
+# def view_notes():
+#     cursor.execute("SELECT * FROM Notes")
+#     Result = cursor.fetchall()
+
+#     for row in Result:
+#         print(row)
+
+
+
+# def edit_note():
+
+#     Nid = input("Enter Note ID to Edit: ")
+#     Title = input("Enter New Title: ")
+#     Content = input("Enter New Content: ")
+#     sql = "UPDATE Notes SET Title=%s, Content=%s WHERE Id=%s"
+#     cursor.execute(sql,(Title,Content,Nid))
+#     db.commit()
+#     print("Note Updated successfully")
+
+
+
+# def delete_note():
+
+#     Nid = input("Enter Note ID To Delete: ")
+#     sql = "DELETE FROM Notes WHERE Id=%s"
+#     cursor.execute(sql,(Nid,))
+
+#     db.commit()
+
+#     print("Note Deleted Successfully")
+
+
+
+# while True:
+
+#     print("\n----- MENU -----")
+#     print("1 Add Contact")
+#     print("2 View Contacts")
+#     print("3 Update Contact")
+#     print("4 Search Contact")
+#     print("5 Delete Contact")
+#     print("6 Add Note")
+#     print("7 View Notes")
+#     print("8 Edit Note")
+#     print("9 Delete Note")
+#     print("10 Exit")
+
+#     choice = input("Enter choice: ").strip()
+
+#     if choice == "1":
+#         add_contact()
+
+#     elif choice == "2":
+#         view_contacts()
+
+#     elif choice == "3":
+#         update_contact()
+
+#     elif choice == "4":
+#         search_contact()
+
+#     elif choice == "5":
+#         delete_contact()
+
+#     elif choice == "6":
+#         add_notes()
+
+#     elif choice == "7":
+#         view_notes()
+
+#     elif choice == "8":
+#         edit_note()
+
+#     elif choice == "9":
+#         delete_note()
+
+#     elif choice == "10":
+#         print("Program closed")
+#         break
+
+#     else:
+#         print("Invalid choice")
+
