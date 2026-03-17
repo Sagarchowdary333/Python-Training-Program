@@ -14,5 +14,9 @@ This repository contains my Python practice programs and task submissions.
 
 All practice tasks are stored in the `Tasks` folder.
 
+## Notes
+
+All Python notes are available in this 'Python-Notes.txt' file.
+
 ## Author
 Sagar Chowdary
