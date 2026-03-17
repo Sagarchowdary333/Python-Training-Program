@@ -95,4 +95,3 @@
 
 # list.clear()
 # print(list)  # OUTPUT: []
-

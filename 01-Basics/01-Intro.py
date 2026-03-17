@@ -51,4 +51,3 @@
 # Age=int(input("Enter your Age: "))
 # print("You Can Vote...!")
 # print("You cannot Vote...!")
-
