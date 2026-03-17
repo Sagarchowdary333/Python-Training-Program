@@ -1,0 +1,235 @@
+-------------------------------------------------- Python – Functions --------------------------------------------------
+
+-------- Objective: Understand function creation, arguments, and return values --------
+
+1. Write a short note explaining
+ 
+   >>> What is a Function...?
+     
+       * A function is a block of code which only runs when it is called.
+       * A function can return data as a result.
+       * A function helps avoiding code repetition.
+ 
+   >>> Difference between In-built Functions and User Defined Functions
+     
+       *  In-Built Functions
+          
+          ---> These functions are already provided by Python.
+               Example: print(), len(), type().
+
+       *  User Defined Functions
+          
+          ---> These functions are created by the programmer to perform a specific task.
+
+2. Create and demonstrate a User Defined Function using the following syntax:
+
+   >>> def fnName():
+           
+       def Training():
+       print("Functions in Python")
+       Training()
+        
+       OUTPUT : Functions in Python
+
+3. Demonstrate the following concepts with separate examples:
+
+    >>> Parameters and Arguments
+       
+        def sum_numbers(x, y):
+        total = x + y
+        print("Total:", total)
+ 
+        sum_numbers(6, 4) ---> 10
+    
+    >>> Positional Arguments
+
+        def Trainee(Name, Role):
+        print("Trainee Name:", Name)
+        print("Role:", Role)
+        Trainee("Sagar", "DevOps Engineer")
+
+        OUTPUT ---> Trainee Name: Sagar
+                    Role: DevOps Engineer
+
+    >>> Keyword Arguments
+
+        def Trainee(Name, Role):
+        print("Trainee Name:", Name)
+        print("Role:", Role)
+
+        Trainee(Role="DevOps Engineer", Name="Sagar") 
+
+        OUTPUT ---> Trainee Name: Sagar
+                    Role: DevOps Engineer
+
+    >>> Default Arguments    
+
+        def Greet_Trainee(Name="Trainee"):
+        print("Welcome", Name)
+
+        Greet_Trainee()
+        Greet_Trainee("Sagar")
+
+        OUTPUT ---> Welcome Trainee
+                    Welcome Sagar
+                   
+    >>> Variable Length Arguments
+
+        * Use *args
+          def fnName(*para):
+
+          def Numbers(*values):
+          for i in values:
+          print(i)
+
+          Numbers(5, 10, 15, 20)
+
+          OUTPUT : 5
+                   10
+                   15
+                   20
+
+    >>> Return Keyword
+
+        def square(n):
+        result = n * n
+        return result
+
+        value = square(6)
+        print("Square value:", value) ---> Square value: 36
+
+
+
+
+
+ -------------------------------------------------- SQL – Aggregation & Grouping --------------------------------------------------
+
+ ---------- Objective: Practice aggregate functions and grouping data ----------
+
+1. Create a database named aggregation_db.
+
+   CREATE DATABASE Aggregation_db;
+   USE Aggregation_db;
+
+2. Create a table named employees with the following columns:
+
+   CREATE TABLE Employees(
+   Emp_Id INT PRIMARY KEY,
+   Emp_Name VARCHAR(50),
+   Salary FLOAT,
+   Department VARCHAR(50)
+   );
+
+3. Insert at least 6 records with repeated department names.
+
+   INSERT INTO Employees VALUES
+   (1,'Sagar',40000,'IT'),
+   (2,'Deepika',50000,'HR'),
+   (3,'Lakshman',30000,'IT'),
+   (4,'Nikhil',35000,'Finance'),
+   (5,'Naveen',45000,'HR'),
+   (6,'Manjusha',30000,'IT');
+
+4. Write SQL queries demonstrating the following Aggregate Functions:
+
+   >>> COUNT() → Count total Employees
+
+       SELECT COUNT(*) AS Total_Employees FROM Employees;
+
+       OUTPUT : Total_Employees
+                     6
+
+  >>> MAX() → Highest salary
+      
+      SELECT MAX(Salary) AS Highest_Salary FROM Employees;
+
+      OUTPUT : Highest_Salary
+                   50000
+
+  >>> MIN() → Lowest salary
+
+      SELECT MIN(Salary) AS Lowest_Salary FROM Employees;
+
+      OUTPUT : Lowest_Salary
+                   30000
+
+  >>> SUM() → Total salary
+
+      SELECT SUM(Salary) AS Total_Salary FROM Employees;
+
+      OUTPUT : Total_Salary
+                 230000
+
+  >>> AVG() → Average salary
+
+      SELECT AVG(Salary) AS Average_Salary FROM Employees;
+
+      OUTPUT :    Average_Salary
+                38333.333333333336
+
+5. Write queries using GROUP BY:
+
+   >>> Find total salary department-wise
+
+       SELECT Department, SUM(Salary) 
+       FROM Employees
+       GROUP BY Department; 
+
+       OUTPUT :     Department    SUM(Salary)
+                        IT	        100000
+                        HR	        95000
+                     Finance	    35000
+
+    >>> Find Average Salary Department-Wise
+
+        SELECT Department, AVG(Salary)
+        FROM Employees
+        GROUP BY Department;
+
+        OUTPUT :    Department       AVG(Salary)
+                        IT	      33333.333333333336
+                        HR	           47500
+                     Finance	       35000
+
+    >>> Count Employees Department-Wise
+
+        SELECT Department, COUNT(Emp_id)
+        FROM Employees
+        GROUP BY Department;
+
+        OUTPUT :    Department    COUNT(Emp_id)
+                        IT	            3
+                        HR	            2
+                     Finance	        1
+
+6. Demonstrate Difference Between
+
+    >>> WHERE Clause
+
+        * Filter rows before grouping
+
+          SELECT Department, SUM(Salary)
+          FROM Employees
+          WHERE Salary > 30000
+          GROUP BY Department;
+
+          OUTPUT :    Department    SUM(Salary)
+                         IT	         40000
+                         HR	         95000
+                      Finance    	 35000
+
+    >>> HAVING Clause
+
+        * Filter groups after GROUP BY
+      
+          SELECT department, SUM(salary)
+          FROM employees
+          GROUP BY department
+          HAVING SUM(salary) > 50000;  
+
+          OUTPUT :    department    SUM(salary)
+                          IT	       100000
+                          HR	       95000
+
+
+                          
