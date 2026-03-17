@@ -4,11 +4,11 @@ This repository contains my Python practice programs and task submissions.
 
 ## Topics Covered
 
-- Introduction to Python
+- Introduction to Python{Comments, Examples, Variables, Data Types}
 - Operators
-- Control Flow
-- Loops
-- Data Structures
+- Control Flow{If, Else, Elif, Nested if}
+- Loops{For & While(Control Statement in Loops - Break & Continue)}
+- Data Structures{Lists, }
 
 ## Tasks
 
