@@ -91,7 +91,16 @@
 # list.reverse()
 # print(list) # OUTPUT: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99]
 
+# List.insert(Ele) ---> Finds the Index Number of the Ele.
+
+# print(list.index(3)) # OUTPUT: 2
+
+list= [1, 2, 3,4,5,4,3,2,1,]
+# List.Count(Ele) ---> No of Occurance
+# print(list.count(3)) # OUTPUT: 2
+
 # List.clear()
 
 # list.clear()
 # print(list)  # OUTPUT: []
+
