@@ -8,7 +8,7 @@ This repository contains my Python practice programs and task submissions.
 - Operators
 - Control Flow{If, Else, Elif, Nested if}
 - Loops{For & While(Control Statement in Loops - Break & Continue)}
-- Data Structures{Lists, }
+- Data Structures{Lists, Tuple, Set, Dictionary}
 
 ## Tasks
 

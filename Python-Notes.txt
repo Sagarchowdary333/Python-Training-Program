@@ -59,9 +59,10 @@ Multiple line Comments ---> '''   ''' or Select the Multiple line and press Ctrl
 Veriables
 ---------------
 >> Named Storage to store the piece of data.
-   *Python is Dynamically Typed language
-   *We don't declare the datatype
+   * Python is Dynamically Typed language
+   * We don't declare the datatype
    * Python automatically detects the datatype at runtime
+
 Ex : VarName = Value (a=10)
 
 Naming Rules
@@ -69,6 +70,7 @@ Naming Rules
 >> Can contains Letters, Numerics, _ , -
 >> It Cannot Start with Numeric
 >> No Reserved Keywords
+
    Ex >> Wrong          |     Correct
                         |      
         print=10        |    a=10     or Odd_Numbers=1,3,5...
@@ -81,6 +83,7 @@ Float   ---> Decimal Numbers (1.1,2.2,3.3)
 String  ---> Sequence of Characters (str1="Sagar Chowdary")('',"")
 
 The Inbuilt function to find datatype is ---> type(obj)
+
 print(a+b)       ---> Addition
 print(str1+str2) ---> Concatination
 Boolean          ---> True/False
@@ -581,287 +584,320 @@ Control Flow
 DATA STRUCTURES [All the Data Structures are Iterable Objects]
 --------------------------
 >> A Data Structure is a way to store and organize data so it can be used efficiently.
+   ---> List
+   ---> Tuple
+   ---> Dictionary
+   ---> Set
 
-* LIST 
---------------------------
-  >> List is used to store an ordered collection of items. 
-  >> Lists are mutable, meaning you can modify them after they are created. 
-  >> They can contain elements of different data types, including numbers, strings, and even other lists.
+    * LIST 
+    --------------------------
+    >> List is used to store an ordered collection of items. 
+    >> Lists are mutable, meaning you can modify them after they are created. 
+    >> They can contain elements of different data types, including numbers, strings, and even other lists.
 
-  >> Syntax: 
-           >> [ele1,ele2,ele3,...]
-           >> Ordered
-           >> Mutable (After creating the List We can change/update)
-           >> Allow Duplicates
-
-  >> Inbuilt Methods:
-           >> .append(ele) ---> Adding new element at the end.
-
-              Ex: list = [1, 2, 3,'HELLO','SAGAR','CHOWDARY',11,22,33,44,55]
-                  list.append([4,5,6])
-                  print(list) 
-              
-              OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, [4, 5, 6]]
-          
-          >> .extend(iterable) ---> Adding of MUltiple Elements at the End.
-
-             Ex: list.extend([66,77,88,99])
-                 print(list) 
-
-             OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
-
-          >> .insert(Position, Value)
-
-             Ex: list.insert(3, 4)
-                 print(list)
-
-             OUTPUT: [1, 2, 3, 4, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
-
-          >> .remove(Ele)
-
-             Ex: list.remove(4)
-                 print(list)
-
-             OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
-
-          >> .pop(ind) ---> Removing Element Using Index Number.
-             
-             Ex: list.pop(14)
-                 print(list)
-
-             OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88]
-
-          >> .pop() ---> Removes the last Element
-
-             Ex: list.pop()
-                 print(list)
-
-             OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77]
-
-          >> .Sort() ---> Arranging the list into assending or desecending order.
-             
-             list= [1, 2, 3,66,77,88,99,11,22,33,44,55,4,5,6,7,8,9]
-             
-             Ex: list.sort() ---> Accending Order
-                 print(list)
-             
-             OUTPUT: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99]
-            
-          >> .sort(reverse=True) ---> Decending Order
-             
-             Ex: list.sort(reverse=True)
-                 print(list)
-                
-             OUTPUT: [99, 88, 77, 66, 55, 44, 33, 22, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-
-          >> .reverse()
-
-             Ex: list.reverse()
-                 print(list)
-
-             OUTPUT: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99]
-
-          >> .insert(Ele) ---> Finds the Index number for the element
-
-             Ex: print(list.index(3)) # OUTPUT: 
-             
-          list= [1, 2, 3,4,5,4,3,2,1,]
-
-          >> .Count(Ele) ---> No of Occurance
-
-             Ex: print(list.count(3)) # OUTPUT: 2
-
-          >> .Clear()
-
-             Ex: list.Clear()
-                 print(list)
-
-             OUTPUT: []
-
-
-
-* Tuple
---------------------------
-  >> Tuple is used to store Permanent data. The Data we would not want to change in future.
-  >> Tuples are Faster than List.
-  >> We Cannot Add or Remove Values From the Tuples.
-
-  >> Syntax:
+    >> Syntax: 
             >> [ele1,ele2,ele3,...]
-            >> Ordered.
-            >> Immutable. (After creating the Tuple We cannot change/update)
-            >> Allows Duplicates.
+            >> Ordered
+            >> Mutable (After creating the List We can change/update)
+            >> Allow Duplicates
+
+    >> Inbuilt Methods:
+            >> .append(ele) ---> Adding new element at the end.
+
+                Ex: list = [1, 2, 3,'HELLO','SAGAR','CHOWDARY',11,22,33,44,55]
+                    list.append([4,5,6])
+                    print(list) 
+                
+                OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, [4, 5, 6]]
             
-  >> Inbuilt Methods:
-                    Tuple= [1,2,3,4,5,4,3,2,1,'Hello','Sagar']
+            >> .extend(iterable) ---> Adding of MUltiple Elements at the End.
 
-                    >> .insert(Ele) ---> Finds the index number for the Elements.
+                Ex: list.extend([66,77,88,99])
+                    print(list) 
+
+                OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+            >> .insert(Position, Value) ---> Inserting a new element at a specific position in the list
+
+                Ex: list.insert(3, 4)
+                    print(list)
+
+                OUTPUT: [1, 2, 3, 4, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+            >> .remove(Ele)
+
+                Ex: list.remove(4)
+                    print(list)
+
+                OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+            >> .pop(ind) ---> Removing Element Using Index Number.
+                
+                Ex: list.pop(99)
+                    print(list)
+
+                OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77, 88]
+
+            >> .pop() ---> Removes the last Element
+
+                Ex: list.pop()
+                    print(list)
+
+                OUTPUT: [1, 2, 3, 'HELLO', 'SAGAR', 'CHOWDARY', 11, 22, 33, 44, 55, 66, 77]
+
+            >> .Sort() ---> Arranging the list into assending or desecending order.
+                
+                list= [1, 2, 3,66,77,88,99,11,22,33,44,55,4,5,6,7,8,9]
+                
+                Ex: list.sort() ---> Accending Order
+                    print(list)
+                
+                OUTPUT: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+                
+            >> .sort(reverse=True) ---> Decending Order
+                
+                Ex: list.sort(reverse=True)
+                    print(list)
                     
-                       Ex: print(list.index(3)) # OUTPUT: 2
+                OUTPUT: [99, 88, 77, 66, 55, 44, 33, 22, 11, 9, 8, 7, 6, 5, 4, 3, 2, 1]
 
-                    >> .Count(Ele) ---> No of Occurance
+            >> .reverse()
 
-                       Ex: print(Tuple.count(3)) # OUTPUT: 2
+                Ex: list.reverse()
+                    print(list)
+
+                OUTPUT: [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+            >> .index(Ele) ---> Finds the Index number for the element
+
+                Ex: print(list.index(3)) # OUTPUT: 2
+                
+            list= [1, 2, 3,4,5,4,3,2,1,]
+
+            >> .Count(Ele) ---> No of Occurance
+
+                Ex: print(list.count(3)) # OUTPUT: 2
+
+            >> .Clear()
+
+                Ex: list.Clear()
+                    print(list)
+
+                OUTPUT: []
 
 
-    * Packing: If we want create Tuple in python, we can create it without parenthesis.
 
-               Ex: Tuple= 1,2,3,4,5,4,3,2,1,'Hello','Sagar'
+------------------------- 6th DAY -------------------------
 
-                   print(Tuple)
+    * Tuple
+    --------------------------
+    >> Tuple is used to store Permanent data. The Data we would not want to change in future.
+    >> Tuples are Faster than List.
+    >> We Cannot Add or Remove Values From the Tuples.
 
-    * Unpacking: If we want create Tuple in python, we can create it without parenthesis.
-                 Unpacking means assigning values to variables from a tuple.
+    >> Syntax:
+                >> [ele1,ele2,ele3,...]
+                >> Ordered.
+                >> Immutable. (After creating the Tuple We cannot change/update)
+                >> Allows Duplicates.
+                
+    >> Inbuilt Methods:
+                        Tuple= [1,2,3,4,5,4,3,2,1,'Hello','Sagar']
 
-                 Ex: Tuple= 1,2,3,4,5,4,3,2,1,'Hello','Sagar'
+                        >> .insert(Ele) ---> Finds the index number for the Elements.
+                        
+                        Ex: print(list.index(3)) # OUTPUT: 2
 
-                     a,b,c,d,e,f,g,h,i,j,k=Tuple
+                        >> .Count(Ele) ---> No of Occurance
 
-                     print(c) # OUTPUT: 3
-                     print(k) # OUTPUT: Sagar
+                        Ex: print(Tuple.count(3)) # OUTPUT: 2
 
 
-* Set
---------------------------
-  >> Set is a collection of unique elements
-  >> It is unordered.
-  >> It is UnIndexed ---> We cannot access the elements by index.
-                          for loop is used to access the elements in Set
-  >> It will not allows Duplicates.
-  >> It is mutable. ---> After creating the Set We can change/update.
-  
-  >> Syntax: {ele1,ele2,ele3,ele4,...}
+        * Packing: If we want create Tuple in python, we can create it without parenthesis.
 
-  >> Ex: Set= {1,2,3,4,5,4,3,2,1,'Hello','Sagar'}
+                Ex: Tuple= 1,2,3,4,5,4,3,2,1,'Hello','Sagar'
 
-         print(Set) # OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar'}
+                    print(Tuple)
 
-         print(set[2]) # OUTPUT: TypeError: 'set' object is not subscriptable.
-                       # Because we cannot access the elements by index in Set.
+        * Unpacking: If we want create Tuple in python, we can create it without parenthesis.
+                    Unpacking means assigning values to variables from a tuple.
 
-        for i in Set:
-        print(i)
-        
-        OUTPUT: 1
-                2
-                3
-                4
-                5
-                Hello
-                Sagar
+                    Ex: Tuple= 1,2,3,4,5,4,3,2,1,'Hello','Sagar'
 
-  >> Inbuilt Methods:
-                     >> Set= {1,2,3,4,5,4,3,2,1,'Hello','Sagar'}
+                        a,b,c,d,e,f,g,h,i,j,k=Tuple
 
-                     >> .add(Ele) ---> Adding new element in Set at the end.
+                        print(c) # OUTPUT: 3
+                        print(k) # OUTPUT: Sagar
 
-                        Ex: Set.add('Chowdary')
-                            print(Set) 
-                            
-                            OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar', 'Chowdary'}
 
-                     >> .remove(Ele) ---> Removing element from the Set
+    * Set
+    --------------------------
+    >> Set is a collection of unique elements
+    >> It is unordered.
+    >> It is UnIndexed ---> We cannot access the elements by index.
+                            for loop is used to access the elements in Set
+    >> It will not allows Duplicates.
+    >> It is mutable. ---> After creating the Set We can change/update.
+    
+    >> Syntax: {ele1,ele2,ele3,ele4,...}
 
-                        Ex: Set.remove('Chowdary')
-                            print(Set) 
-                            
-                            OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar'}
+    >> Ex: Set= {1,2,3,4,5,4,3,2,1,'Hello','Sagar'}
 
-                     >> .Union(set) ---> Union of two sets.
+            print(Set) # OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar'}
 
-                        Ex: Set1= {1,2,3,4,5}
-                            Set2= {4,5,6,7,8}
-                            print(Set1.union(Set2))
+            print(set[2]) # OUTPUT: TypeError: 'set' object is not subscriptable.
+                        # Because we cannot access the elements by index in Set.
 
-                            OUTPUT: {1, 2, 3, 4, 5, 6, 7, 8}
+            for i in Set:
+            print(i)
+            
+            OUTPUT: 1
+                    2
+                    3
+                    4
+                    5
+                    Hello
+                    Sagar
 
-                     >> .Intersection(set) ---> It will return the common elements of two sets.
+    >> Inbuilt Methods:
+                        >> Set= {1,2,3,4,5,4,3,2,1,'Hello','Sagar'}
 
-                        EX: print(Set1.intersection(Set2)) # OUTPUT: {4, 5}
+                        >> .add(Ele) ---> Adding new element in Set at the end.
 
-                     >> .Difference(set) ---> Difference of two sets. It will return the elements which are not common in two sets.
+                            Ex: Set.add('Chowdary')
+                                print(Set) 
+                                
+                                OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar', 'Chowdary'}
 
-                        Ex: print(Set1.difference(Set2)) # OUTPUT: {1, 2, 3}
-                            print(Set2.difference(Set1)) # OUTPUT: {6, 7, 8}
- 
-                     >> .Clear() 
+                        >> .remove(Ele) ---> Removing element from the Set
 
-                        Ex: Set.clear()
-                            print(Set)
+                            Ex: Set.remove('Chowdary')
+                                print(Set) 
+                                
+                                OUTPUT: {1, 2, 3, 4, 5, 'Hello', 'Sagar'}
 
-                            OUTPUT: set()
+                        >> .Union(set) ---> Union of two sets.
 
+                            Ex: Set1= {1,2,3,4,5}
+                                Set2= {4,5,6,7,8}
+                                print(Set1.union(Set2))
+
+                                OUTPUT: {1, 2, 3, 4, 5, 6, 7, 8}
+
+                        >> .Intersection(set) ---> It will return the common elements of two sets.
+
+                            EX: print(Set1.intersection(Set2)) # OUTPUT: {4, 5}
+
+                        >> .Difference(set) ---> Difference of two sets. It will return the elements which are not common in two sets.
+
+                            Ex: print(Set1.difference(Set2)) # OUTPUT: {1, 2, 3}
+                                print(Set2.difference(Set1)) # OUTPUT: {6, 7, 8}
+    
+                        >> .Clear() 
+
+                            Ex: Set.clear()
+                                print(Set)
+
+                                OUTPUT: set()
+
+                        
+
+    * Dictionary: Dictionary is used to store the data in the form of key-value pair.
+                Dictionaries are Mutable. (After creating the Dictionary We can change/update)
+                Dictionaries are Unordered.
+                Dictionaries are Indexed.
+                Dictionaries allows Duplicates. (We can have duplicate keys in the Dictionary)
+
+                Syntax: {key1:value1,key2:value2,key3:value3,...}
+
+                >> Ex: Details= {"Name":'Sagar',"Age":'23',"Domain":'DevOps Engineer'}
+                    print(Details)
+
+                    OUTPUT : {'Name': 'Sagar', 'Age': '23', 'Domain': 'DevOps Engineer'}
+
+                >> print(Details["Name"]) ---> Accessing the element by key
+
+                    OUTPUT: Sagar
+                
+                >> Details["Age"]="24"  ---> Update
+                    print(Details)
                     
+                    OUTPUT : {'Name': 'Sagar', 'Age': '24', 'Domain': 'DevOps Engineer'}
+    
+                >> Details["Company"]="Stackly"  ---> Add
+                    print(Details)
+                    OUTPUT : {'Name': 'Sagar', 'Age': '24', 'Domain': 'DevOps Engineer', 'Company': 'Stackly'}
 
-* Dictionary: Dictionary is used to store the data in the form of key-value pair.
-              Dictionaries are Mutable. (After creating the Dictionary We can change/update)
-              Dictionaries are Unordered.
-              Dictionaries are Indexed.
-              Dictionaries allows Duplicates. (We can have duplicate keys in the Dictionary)
+            >> Inbuilt Methods:
+                                
+                                >> .keys() ---> Returns the keys of the dictionary.
 
-              Syntax: {key1:value1,key2:value2,key3:value3,...}
+                                Ex: print(Details.keys()) 
 
-              >> Ex: Details= {"Name":'Sagar',"Age":'23',"Domain":'DevOps Engineer'}
-                 print(Details)
+                                OUTPUT : dict_keys(['Name', 'Age', 'Domain'])
 
-                 OUTPUT : {'Name': 'Sagar', 'Age': '23', 'Domain': 'DevOps Engineer'}
+                                >> .values() ---> Returns the values of the dictionary.
 
-              >> print(Details["Name"]) ---> Accessing the element by key
+                                Ex: print(Details.values()) 
+                                
+                                OUTPUT : dict_values(['Sagar', '24', 'DevOps Engineer'])
 
-                 OUTPUT: Sagar
-              
-              >> Details["Age"]="24"  ---> Update
-                 print(Details)
-                 
-                 OUTPUT : {'Name': 'Sagar', 'Age': '24', 'Domain': 'DevOps Engineer'}
- 
-              >> Details["Company"]="Stackly"  ---> Add
-                 print(Details)
-                 OUTPUT : {'Name': 'Sagar', 'Age': '24', 'Domain': 'DevOps Engineer', 'Company': 'Stackly'}
+                                >> .items() ---> Returns the key-value pairs of the dictionary.
 
-        >> Inbuilt Methods:
-                            
-                            >> .keys() ---> Returns the keys of the dictionary.
+                                Ex: print(Details.items()) 
+                                
+                                OUTPUT : dict_items([('Name', 'Sagar'), ('Age', '24'), ('Domain', 'DevOps Engineer')])
 
-                               Ex: print(Details.keys()) 
+                                >> .pop("key") ---> Removing the element by key.
 
-                               OUTPUT : dict_keys(['Name', 'Age', 'Domain'])
+                                Ex: print(Details.pop("Age")) # OUTPUT : 23
 
-                            >> .values() ---> Returns the values of the dictionary.
+                                    print(Details) 
+                                    
+                                    OUTPUT : {'Name': 'Sagar', 'Domain': 'DevOps Engineer'}
 
-                               Ex: print(Details.values()) 
-                               
-                               OUTPUT : dict_values(['Sagar', '24', 'DevOps Engineer'])
+                                >> for loop ---> It is used to iterate over a sequence (like a list, tuple, string) or other iterable objects.
+                                                It executes a block of code for each item in the sequence.
 
-                            >> .items() ---> Returns the key-value pairs of the dictionary.
+                                Ex: for i in Details:
+                                    print(i) 
 
-                               Ex: print(Details.items()) 
-                               
-                               OUTPUT : dict_items([('Name', 'Sagar'), ('Age', '24'), ('Domain', 'DevOps Engineer')])
+                                    OUTPUT : Name
+                                                Age
+                                                Domain
 
-                            >> .pop("key") ---> Removing the element by key.
+                                Ex: for i in Details:
+                                    print(Details[i])
 
-                               Ex: print(Details.pop("Age")) # OUTPUT : 23
-
-                                   print(Details) 
-                                   
-                                   OUTPUT : {'Name': 'Sagar', 'Domain': 'DevOps Engineer'}
-
-                            >> for loop ---> It is used to iterate over a sequence (like a list, tuple, string) or other iterable objects.
-                                             It executes a block of code for each item in the sequence.
-
-                               Ex: for i in Details:
-                                   print(i) 
-
-                                   OUTPUT : Name
-                                            Age
-                                            Domain
-
-                               Ex: for i in Details:
-                                   print(Details[i])
-
-                                   OUTPUT: OUTPUT : Sagar
-                                                    23
-                                                    DevOps Engineer
+                                    OUTPUT: OUTPUT : Sagar
+                                                        23
+                                                        DevOps Engineer
 
                                 
+
+------------------------- 7th DAY -------------------------
+
+Funtions
+--------------------------
+>> It is a block of code that performs a specific task and can be reused multiple times in a program.
+>> It is a collection of statements that perform a specific task and can be called multiple times in a program.
+>> It is a way to break down a complex task into smaller, more manageable parts.
+>> The function is called by its name followed by parentheses.
+
+   * Naming Rules
+     ---------------
+     >> Can contains Letters, Numerics, _ , -
+     >> It Cannot Start with Numeric
+     >> No Reserved Keywords
+
+     Syntax:
+         def FunName():
+             block of code
+         FunName() ---> calling the function
+    
+    * parameters: Parameters are the variables created inside the function without a value assigned to them.
+      
+      Ex: 
+          
+          This code defines a function called (Training) that takes two parameters: Name and Role. 
+          When this function is called, it will print the values of Name and Role to the console.
