@@ -1,4 +1,4 @@
-# Python Training Program
+# Python For DevOps
 
 This repository contains my Python practice programs and task submissions.
 
