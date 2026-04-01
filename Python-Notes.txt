@@ -78,9 +78,48 @@ Naming Rules
 
 Data types
 ---------------
-Integer ---> Whole Numbers (-2,-1,0,1,2,)
-Float   ---> Decimal Numbers (1.1,2.2,3.3)
-String  ---> Sequence of Characters (str1="Sagar Chowdary")('',"")
+* Integer ---> Whole Numbers (-2,-1,0,1,2,)
+* Float   ---> Decimal Numbers (1.1,2.2,3.3)
+* String  ---> Sequence of Characters (str1="Sagar Chowdary")(''," ",''' ''')
+               (''' ''') ---> By using triple quardents we can write multiple lines in a single line.
+                              But in Single & Double quardents we can't write multiple lines in a single line.
+               >> strings are immutable
+               >> Strings are iterables
+    
+    * OPERATIONS:
+    --------------------
+    >> + ---> Concatination ---> Str1 + Str2 ---> Str1str2
+    >> * ---> Repetition ---> str1*3 ---> Str1str2str3
+
+    * INBUILT METHODS:
+    ------------------------------
+    >> .Upper () --> Converts all the characters to Uppercase.
+        Ex: print("sagar chowdary".upper())
+
+    >> .Lower () --> Converts all the characters to Lowercase.
+        Ex: print("sagar chowdary".lower())
+
+    >> .Title () --> Converts the first character of each word to Uppercase.
+        Ex: print("sagar chowdary".title())
+
+    >> .Capitalize () --> Converts the first character of the string to Uppercase
+        Ex: print("sagar chowdary".capitalize())
+
+    >> .Strip () --> Removes the whitespace from the beginning & end of the string
+        Ex: print("   sagar chowdary   ".strip())
+
+    >> .Lstrip () --> Removes the whitespace from the beginning of the string
+        Ex: print("   sagar chowdary   ".lstrip())
+
+    >> .Rstrip () --> Removes the whitespace from the end of the string
+        Ex: print("   sagar chowdary   ".rstrip())
+
+    >> .Replace () --> Replaces a character with another character
+        Ex: Name="Sagar Kota"
+            print(Name.replace("Kota","Chowdary"))
+
+    >> .Split () --> Splits the string into a list of substrings
+        Ex: 
 
 The Inbuilt function to find datatype is ---> type(obj)
 

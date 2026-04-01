@@ -210,3 +210,35 @@
 #                  #         Bye
 #                  #         None
 
+# ''' ''' ---> By using triple quardents we can write multiple lines in a single line.
+#              But in Single & Double quardents we can't write multiple lines in a single line.
+
+# strings are immutable
+# Strings are iterables
+
+# OPERATIONS:
+# ------------
+# + ---> Concatenation ---> str1 + str2 ---> str1str2
+# * ---> Repetition ---> str1 * 3 ---> str1str1str1
+
+# Inbuilt Methods Of Strings:
+# .Upper () --> Converts all the characters to Uppercase
+# .Lower () --> Converts all the characters to Lowercase
+# .Title () --> Converts the first character of each word to Uppercase
+# .Capitalize () --> Converts the first character of the string to Uppercase
+# .Strip () --> Removes the whitespace from the beginning & end of the string
+# .Lstrip () --> Removes the whitespace from the beginning of the string
+# .Rstrip () --> Removes the whitespace from the end of the string
+# .Replace () --> Replaces a character with another character
+# .Split () --> Splits the string into a list of substrings
+
+# print("sagar chowdary".upper())
+# print("sagar chowdary".lower())
+# print("sagar chowdary".title())
+# print("sagar chowdary".capitalize())
+# print("   sagar chowdary   ".strip())
+# print("   sagar chowdary   ".lstrip())
+# print("   sagar chowdary   ".rstrip())
+# Name="Sagar Kota"
+# print(Name.replace("Kota","Chowdary"))
+
