@@ -1,4 +1,4 @@
-# Python Training Program
+# Python For DevOps
 
 This repository contains my Python practice programs and task submissions.
 
@@ -9,6 +9,7 @@ This repository contains my Python practice programs and task submissions.
 - Control Flow{If, Else, Elif, Nested if}
 - Loops{For & While(Control Statement in Loops - Break & Continue)}
 - Data Structures{Lists, Tuple, Set, Dictionary}
+- Functions{Parameters, Arguments, Return Keyword}
 
 ## Tasks
 
