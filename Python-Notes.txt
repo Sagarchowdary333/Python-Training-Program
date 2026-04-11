@@ -78,8 +78,11 @@ Naming Rules
 
 Data types
 ---------------
-* Integer ---> Whole Numbers (-2,-1,0,1,2,)
-* Float   ---> Decimal Numbers (1.1,2.2,3.3)
+* Numeric Data Types: Numeric data types are the data types that are used to represent numbers. 
+                      There are three types in Python: int, float and complex.
+    >> Integer ---> Whole Numbers (-2,-1,0,1,2,)
+    >> Float   ---> Decimal Numbers (1.1,2.2,3.3)
+    >> complex ---> Complex means a number with real and imaginary part. It is represented by j in Python.
 * String  ---> Sequence of Characters (str1="Sagar Chowdary")(''," ",''' ''')
                (''' ''') ---> By using triple quardents we can write multiple lines in a single line.
                               But in Single & Double quardents we can't write multiple lines in a single line.

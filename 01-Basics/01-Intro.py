@@ -20,8 +20,11 @@
 # print(a)
 # Answer will be 20 because latest assigned value will be consider.
 
+# Numeric Data Types: Numeric data types are the data types that are used to represent numbers. There are three types in Python: int, float and complex.
 # a=10 ---> Integer
 # b=10.5 ---> Float
+# compilex ---> Complex means a number with real and imaginary part. It is represented by j in Python.
+
 # c="Sagar" or Str1='Sagar'
 # str2='Chowdary'
 
